@@ -1,0 +1,102 @@
+/* Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 40px;
+}
+
+/* Section Cards */
+.section-card {
+  background: #f7f5f5;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2f5;
+}
+
+h2 {
+  margin-top: 0;
+  color: #5a6ce6;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 10px;
+}
+
+/* Numeric Display */
+.display-value {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1d3557;
+  margin: 20px 0;
+}
+
+/* Conditional  Elements */
+.status-message {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 25px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.status-message.warning {
+  color: #e63946;
+  background-color: #ffeef0;
+}
+
+.status-message.info {
+  color: #457b9d;
+  background-color: #f1faee;
+}
+
+/* Buttons  */
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-increment { background-color: #1ebdaa; color: white; }
+.btn-increment:hover { background-color: #218074; }
+
+.btn-decrement { background-color: #e53b10; color: white; }
+.btn-decrement:hover { background-color: #e64016; }
+.btn-decrement:disabled { 
+  background-color: #e0e0e0; 
+  color: #a0a0a0; 
+  cursor: not-allowed; 
+}
+
+.btn-reset { background-color: #e9c46a; color: #264653; }
+.btn-reset:hover { background-color: #ddb24b; }
+
+.btn-random { background-color: #07639c; color: white; min-width: 220px; }
+.btn-random:hover { background-color: #315b77; }
